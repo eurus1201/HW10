@@ -7,22 +7,29 @@ body {
 }
 .labelHeader{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     margin: 1rem;
 }
 
-.test2{
-    width: 25%;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size:20px;
-    text-align:center;
-    margin:0
+.labelHeader>div{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+ 
+} 
+
+.center{
+width: 25%;
+text-align: center;
+padding-right: 1rem;
 }
-.test3{
-    width: 25%;  
-    padding-left:110px;
+.centers{
+    width: 12.5%;
+    text-align: center;
+    padding-left: 2.9rem;
 }
+
 .input {
     border: 1px solid #Fefefe;
     outline: none;
@@ -53,7 +60,7 @@ button {
 }
 
 .toDo-list{
-    padding: 0;
+    padding-left:0;
     list-style: none;
     width: 100%;
 
@@ -74,7 +81,8 @@ button {
 }
 
 .toDo-item span{
-    flex:1
+    flex:1;
+        padding: 1rem 8rem;
 }
 
 .toDo-item button {

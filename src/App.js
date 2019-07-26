@@ -80,12 +80,13 @@ export default class App extends Component {
 
   render() {
     return (
-      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', margin: 'auto' }}>
+      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', margin: 'auto', padding:'1rem' }}>
         <div className="labelHeader">
-          <div className="test2">User Name</div>
-          <div className="test2">First Name </div>
-          <div className="test2">Last Name </div>
-          <div className="test3">Sex</div>
+          <div className=" center">User Name</div>
+          <div className=" center">First Name </div>
+          <div className=" center">Last Name </div>
+          <div className=" centers">Sex</div>
+          <div className=" centers">Action</div>
         </div> 
         <form style={{ display: 'flex', width: '100%' }} onSubmit={this.submitHandler}>
 
@@ -97,7 +98,10 @@ export default class App extends Component {
         </form>
         <div className="toDo-list rowspan">
           {this.state.toDoList.map(toDo => <div className="toDo-item" key={toDo.id}>
-            <span>{toDo.text}</span><span>{toDo.textf}</span><span>{toDo.textl}</span><span>{toDo.texts}</span><span>
+            <span>{toDo.text}</span>
+            <span>{toDo.textf}</span>
+            <span>{toDo.textl}</span>
+            <span>
               {toDo.texts}
               <input type="checkbox" defaultChecked={toDo.texts} disabled />
             </span>
